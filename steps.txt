@@ -1,0 +1,16 @@
+các bước tạo 1 dự án
+1. tạo db : docker run --name capstone_express_orm -e MYSQL_ROOT_PASSWORD=1234 -d -p 3306:3306 mysql : nó tạo kèm docker image
+lệnh docker build . -t chỉ chạy khi có file dockerfile
+2. khởi tạo trong vcode :
+- npm i sequelize mysql2
+- npm i dotenv
+- npm i
+- npm init (tạo file parkage.json)
+- npm i sequelize-auto
+- npm install bcrypt pg (mã hóa password)
+- npm install express-jwt
+- npx sequelize-auto -h localhost -d node36 -u root -x 1234 -p 3307 --dialect mysql -o src/models -l esm (copy table)
+- npm i multer (cài thư viện upload)
+- npm i compress-images
+- npm i pngquant-bin@6.0.1 gifsicle@5.2.1 (thu vien ho tro cho compress-images)
+- em note may cai thu vien nay em cai de anh nho
